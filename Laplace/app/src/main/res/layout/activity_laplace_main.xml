@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/quicksand"
+    tools:context=".LaplaceMain">
+
+    <TextView
+        android:id="@+id/Inst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Choose?"
+        android:fontFamily="@font/quicksand"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:hint="Please Type the Function Here"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/main1"
+        android:text="Get Solution"
+        android:fontFamily="@font/quicksand"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Inst">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/cosht"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="1dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:text="cosh(at)" />
+
+                <Button
+                    android:id="@+id/sinht"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:text="sinh(at)" />
+                <Button
+                    android:id="@+id/ta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:textAllCaps="false"
+                    android:background="@drawable/main1"
+                    android:text="t^a" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/epowt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:text="e^t" />
+
+                <Button
+                    android:id="@+id/cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:layout_weight="1.0"
+                    android:text="cos(at)" />
+                <Button
+                    android:id="@+id/sint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:text="sin(at)"
+                    tools:layout_editor_absoluteX="129dp"
+                    tools:layout_editor_absoluteY="443dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dirac"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/quicksand"
+                    android:background="@drawable/main1"
+                    android:layout_weight="1.0"
+                    android:text="Dirac Delta" />
+
+                <Button
+                    android:id="@+id/unitstep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/main1"
+                    android:textAllCaps="false"
+                    android:layout_weight="1.0"
+                    android:text="Unit Step" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
